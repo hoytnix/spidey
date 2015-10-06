@@ -1,0 +1,43 @@
+{% extends 'layout.html' %}
+{% block content %}
+<style>
+td {
+  padding: 5px;
+}
+
+div.progress {
+  vertical-align: middle;
+}
+</style>
+
+<div class="col-xs-12 col-sm-12 col-md-12">
+  <h1>Dictionary {{ total }}</h1>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-12">
+  <table style="font-size: 25px;">
+    <thead>
+      <tr style="margins: 5px">
+        <td>
+          word
+        </td>
+        <td>
+          #
+        </td>
+      </tr>
+    </thead>
+    <tbody>
+      {% for word in words %}
+      <tr>
+        <td>
+          <a href="/stats/word/{{ word.word }}">{{ word.word }}</a>
+        </td>
+        <td>
+          {{ word.count }}
+        </td>
+      </tr>
+      {% endfor %}
+    <tbody>
+  </table>
+</div>
+{% endblock %}

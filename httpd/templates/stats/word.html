@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+{% block content %}
+<style>
+td {
+  padding: 5px;
+}
+
+div.progress {
+  vertical-align: middle;
+}
+</style>
+
+<div class="col-xs-12 col-sm-12 col-md-12">
+  <h1>{{ word }}</h1>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-12">
+  <table style="font-size: 25px;">
+    <tbody>
+      {% for domain in domains %}
+      <tr>
+        <td>
+          <a href="/stats/domain/{{ domain[0] }}">{{ domain[0] }}</a>
+        </td>
+        <td>
+          {% for word in domain[1] %}{{word}}{% if not loop.last %}, {%endif%}{%endfor%}
+        </td>
+      </tr>
+      {% endfor %}
+    <tbody>
+  </table>
+</div>
+{% endblock %}

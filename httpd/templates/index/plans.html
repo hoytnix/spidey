@@ -1,0 +1,120 @@
+{% extends 'layout2.html' %}
+{% block content %}
+<style>
+.panel-body {
+  -moz-transition: all 1.5s ease;
+  -o-transition: all 1.5s ease;
+  -webkit-transition: all 1.5s ease;
+}
+.panel-body:hover {
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+}
+.panel-pricing .panel-heading {
+  padding: 20px 10px;
+}
+.panel-pricing .panel-heading .fa {
+  margin-top: 10px;
+  font-size: 80px;
+}
+.panel-pricing .list-group-item {
+  color: #fff;
+  font-size: 30px;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.5);
+}
+.panel-pricing .list-group-item:last-child {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.panel-pricing .list-group-item:first-child {
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+.panel-pricing .panel-body {
+  background-color: #f0f0f0;
+  font-size: 40px;
+  color: #777777;
+  padding: 20px;
+  margin: 0px;
+}
+.panel-body > span {
+  font-size: 30px;
+}
+.i-g {
+  color: #00bc8c;
+}
+.i-r {
+  color: #fff;
+}
+</style>
+                <!-- item -->
+                <div class="col-md-4 text-center">
+                    <div class="panel panel-danger panel-pricing">
+                        <div class="panel-heading">
+                            <i class="fa fa-server"></i>
+                            <h3>Small Business</h3>
+                        </div>
+                        <div class="panel-body text-center">
+                            <p><strong>$49 / Month</strong></p>
+                            <p>10K Visitors</p>
+                            <span><i class="fa fa-bar-chart i-g"></i> Great Starter</span>
+                        </div>
+                        <ul class="list-group text-center">
+                            <li class="list-group-item"><i class="fa fa-dollar i-g"></i> ($0.0049 p/V)</li>
+                            <li class="list-group-item"><i class="fa fa-globe i-g"></i> 50 Countries!</li>
+                            <li class="list-group-item"><i class="fa fa-shopping-cart i-g"></i> 130 Niches!</li>
+                        </ul>
+                        <div class="panel-footer">
+                            <a class="btn btn-lg btn-block btn-danger" href="#">BUY NOW!</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /item -->
+
+                <!-- item -->
+                <div class="col-md-4 text-center">
+                    <div class="panel panel-warning panel-pricing">
+                        <div class="panel-heading">
+                            <i class="fa fa-diamond"></i>
+                            <h3>Entrepreneur</h3>
+                        </div>
+                        <div class="panel-body text-center">
+                            <p><strong>$65 / Month</strong></p>
+                            <p>15K Visitors</p>
+                            <span><i class="fa fa-area-chart i-g"></i> Most Popular</span>
+                        </div>
+                        <ul class="list-group text-center">
+                            <li class="list-group-item"><i class="fa fa-dollar i-g"></i> ($0.0044 p/V)</li>
+                            <li class="list-group-item"><i class="fa fa-globe i-g"></i> 50 Countries!</li>
+                            <li class="list-group-item"><i class="fa fa-shopping-cart i-g"></i> 130 Niches!</li>
+                        </ul>
+                        <div class="panel-footer">
+                            <a class="btn btn-lg btn-block btn-warning" href="#"><i class="fa fa-credit-card"></i> BUY NOW!</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /item -->
+
+                <!-- item -->
+                <div class="col-md-4 text-center">
+                    <div class="panel panel-success panel-pricing">
+                        <div class="panel-heading">
+                            <i class="fa fa-connectdevelop"></i>
+                            <h3>Visionary</h3>
+                        </div>
+                        <div class="panel-body text-center">
+                            <p><strong>$99 / Month</strong></p>
+                            <p>25K Visitors</p>
+                            <span><i class="fa fa-line-chart i-g"></i> Best Value</span>
+                        </div>
+                        <ul class="list-group text-center">
+                            <li class="list-group-item"><i class="fa fa-dollar i-g"></i> ($0.00396 p/V)</li>
+                            <li class="list-group-item"><i class="fa fa-globe i-g"></i> 50 Countries!</li>
+                            <li class="list-group-item"><i class="fa fa-shopping-cart i-g"></i> 130 Niches!</li>
+                        </ul>
+                        <div class="panel-footer">
+                            <a class="btn btn-lg btn-block btn-success" href="#">BUY NOW!</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /item -->
+{% endblock %}

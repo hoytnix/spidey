@@ -1,0 +1,41 @@
+{% extends 'layout2.html' %}
+{% block content %}
+          <div class="blog-post">
+            <h1>Spider</h1>
+
+            <article>
+
+              <p>
+                At web we use spiders for assorted tasks including: website fingerprinting, market research, search-engine/social-media optimization, advertising fraud detection, and custom applications.
+              </p>
+
+              <p>
+                Custom applications will have a different URL than the one you are looking at (https://web.idgaf.me/spider) in the user-agent describing their purpose, as well as opt-out information.
+              </p>
+
+              <hr>
+
+              <h3>User-Agent:</h3>
+
+              <blockquote>
+                Mozilla/5.0 (compatible; me.idgaf.web/1.0; +https://web.idgaf.me/spider)
+              </blockquote>
+
+              <hr>
+
+              <h3>Opt-Out</h3>
+
+              <p>To block requests from our spider add the following to your robots.txt file:</p>
+
+              <blockquote>
+                User-agent: web<br/>
+                Disallow: /
+              </blockquote>
+
+              <hr>
+
+              <p>This document was last updated on June 12, 2015</p>
+
+            </article>
+          </div>
+{% endblock %}
