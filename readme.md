@@ -1,6 +1,6 @@
 # muh spider
 
-Copyright (c) 2015 Michael Hoyt.
+Copyright (c) 2015-2016 Michael Hoyt.
 
 * [search](https://github.com/pr0xmeh/spider/tree/master/docs/search)
 * [spider](https://github.com/pr0xmeh/spider/tree/master/docs/spider)
